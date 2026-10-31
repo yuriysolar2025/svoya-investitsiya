@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Своя инвестиция: найди инвестора сам за 30 дней</title>
+<meta name="description" content="Для собственников малого бизнеса и арендных проектов, которым нужно от 1 до 30 млн ₽. Упаковка с ИИ, понятная схема сделки и разбор каждого разговора с инвестором.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Своя инвестиция: найди инвестора сам за 30 дней">
+<meta property="og:description" content="Готовое предложение инвестору и первые 5 переговоров за 30 дней, без брокера и его 10%.">
+<meta property="og:image" content="assets/gen-club.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1c1c'/%3E%3Crect x='7' y='7' width='18' height='18' fill='%238fa68e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="bar wrap">
+  <a class="mark" href="#top">Своя инвестиция</a>
+  <nav aria-label="Разделы">
+    <a href="#objections">Возражения</a>
+    <a href="#weeks">Как идёт</a>
+    <a href="#compare">Сравнение</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <a class="btn btn-small" href="https://t.me/yuriy_solar?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82">Написать</a>
+</header>
+
+<main id="top">
+
+<section class="hero wrap">
+  <div class="hero-copy">
+    <h1>Найди инвестора сам за 30 дней</h1>
+    <p class="lead">Для собственников бизнеса и арендных проектов, которым нужно от 1 до 30 млн ₽. Упаковка с ИИ, понятная схема сделки и разбор каждого разговора с инвестором. Без брокера и его 10%.</p>
+    <a class="btn" href="https://t.me/yuriy_solar?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82">Проверить мой проект за 15 минут</a>
+    <p class="note">Бесплатный созвон. Скажу, какая схема подойдёт и реально ли найти инвестора в твоём кругу. Если не подходит, скажу прямо.</p>
+  </div>
+
+  <form class="sheet" data-ui id="calc" aria-label="Расчёт на сумму инвестора" onsubmit="return false">
+    <h2 class="sheet-title">Расчёт, который выдержит вопросы инвестора</h2>
+    <div class="field">
+      <label for="c-sum">Нужная сумма</label>
+      <output id="o-sum" for="c-sum">3 000 000 ₽</output>
+      <input id="c-sum" type="range" min="500000" max="30000000" step="100000" value="3000000">
+    </div>
+    <div class="field">
+      <label for="c-profit">Прибыль проекта в месяц</label>
+      <output id="o-profit" for="c-profit">250 000 ₽</output>
+      <input id="c-profit" type="range" min="50000" max="3000000" step="10000" value="250000">
+    </div>
+    <div class="field">
+      <label for="c-share">Доля прибыли инвестору</label>
+      <output id="o-share" for="c-share">40%</output>
+      <input id="c-share" type="range" min="10" max="80" step="5" value="40">
+    </div>
+    <label class="toggle"><input id="c-stress" type="checkbox"> Показать, если прибыль упадёт на 30%</label>
+    <dl class="result" aria-live="polite">
+      <div class="result-main"><dt>Инвестор получает в месяц</dt><dd id="r-month">100 000 ₽</dd></div>
+      <div><dt>Вложение вернётся за</dt><dd id="r-back">30 мес</dd></div>
+      <div><dt>В год к вложению</dt><dd id="r-year">40%</dd></div>
+      <div><dt>Брокер за эту сумму взял бы</dt><dd id="r-broker">до 300 000 ₽</dd></div>
+    </dl>
+    <p class="sheet-note">Считается по твоим цифрам. Это заготовка для разговора, обещанием дохода не является.</p>
+    <a class="btn btn-wide" id="calc-send" href="https://t.me/yuriy_solar?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82">Обсудить этот расчёт</a>
+  </form>
+</section>
+
+<section class="who wrap" id="who">
+  <h2 class="reveal">Для двух ситуаций</h2>
+  <div class="who-grid">
+    <article class="who-a reveal">
+      <span class="crop"><img src="assets/gen-club.jpg" width="1600" height="1066" alt="Пустое помещение под второй компьютерный клуб: столы собраны, мониторы ещё в коробках" loading="lazy"></span>
+      <h3>Вторая точка, 0,5–5 млн ₽</h3>
+      <p>Первая точка окупилась, есть помещение под вторую. Банк просит залог квартиры, фонды отвечают «проект слишком мал». Ты хочешь открыться на чужие деньги и не отдать контроль.</p>
+    </article>
+    <article class="who-b reveal">
+      <span class="crop"><img src="assets/gen-villa.jpg" width="1600" height="1073" alt="Вилла в стройке рядом с рисовыми террасами на Бали" loading="lazy"></span>
+      <h3>Объект под аренду, от 100 тыс USD</h3>
+      <p>Знакомые готовы вложить, но спрашивают: что я получу и как ты будешь отчитываться? Нужен расчёт и понятная схема участия, в том числе в чужой стране.</p>
+    </article>
+  </div>
+</section>
+
+<section class="objections" id="objections">
+  <div class="wrap">
+    <h2 class="reveal">Что сказал инвестор?</h2>
+    <p class="reveal section-lead">«Встреча прошла отлично, а инвестор пропал» обычно значит, что на его вопрос не было готового ответа. Вот на что ты будешь отвечать и что для этого будет в руках.</p>
+    <div class="cmd" data-ui id="cmd">
+      <input id="cmd-q" type="search" placeholder="Найти возражение" aria-label="Найти возражение" autocomplete="off">
+      <ul id="cmd-list">
+        <li class="on"><button type="button" aria-expanded="true">Надо подумать</button><p>Договариваешься о следующем шаге прямо на встрече: дата, вопрос, кто что присылает. Без этого «подумаю» превращается в тишину.</p></li>
+        <li><button type="button" aria-expanded="false">Вы сами нарисовали этот P&amp;L</button><p>Показываешь, откуда каждая цифра: выписки, договор аренды, чеки. И сценарий, где прибыль ниже плана.</p></li>
+        <li><button type="button" aria-expanded="false">Надо посоветоваться</button><p>Отдаёшь одностраничник, который можно переслать жене или партнёру, и зовёшь их на следующую встречу.</p></li>
+        <li><button type="button" aria-expanded="false">Как я увижу деньги?</button><p>Показываешь шаблон ежемесячного отчёта: что пришло, что ушло, сколько выплачено.</p></li>
+        <li><button type="button" aria-expanded="false">Что будет, если всё встанет?</button><p>Заранее прописываешь в схеме сделки, что получает инвестор при остановке. Формулировки проверяет юрист.</p></li>
+        <li><button type="button" aria-expanded="false">Нет денег сейчас</button><p>Договариваешься, когда вернуться к разговору, и идёшь к следующему человеку из своего списка.</p></li>
+        <li><button type="button" aria-expanded="false">Боязно, первый раз</button><p>Показываешь бизнес вживую или на видео-экскурсии и объясняешь простыми словами, что он будет получать каждый месяц.</p></li>
+      </ul>
+      <p class="cmd-empty" id="cmd-empty" hidden>Такого в списке нет. Напиши мне, разберём твой случай.</p>
+    </div>
+  </div>
+</section>
+
+<section class="weeks" id="weeks">
+  <h2 class="wrap weeks-title reveal">Как идут 30 дней</h2>
+  <div class="stage" id="stage">
+    <div class="panel" data-week="0">
+      <div class="clause"><h3>Сначала факты и расчёт</h3><p>ИИ-ассистент по брифу собирает финмодель и считает доход инвестора на его сумму.</p></div>
+      <div class="frag-field"><div class="frag" data-ui>
+        <p class="frag-h">Вторая точка, план на месяц</p>
+        <table>
+          <tr><th scope="row">Выручка</th><td>1 200 000 ₽</td></tr>
+          <tr><th scope="row">Аренда</th><td>−180 000 ₽</td></tr>
+          <tr><th scope="row">Зарплаты</th><td>−320 000 ₽</td></tr>
+          <tr><th scope="row">Закупки и прочее</th><td>−450 000 ₽</td></tr>
+          <tr class="sum"><th scope="row">Прибыль</th><td>250 000 ₽</td></tr>
+          <tr><th scope="row">Инвестору, 40%</th><td>100 000 ₽</td></tr>
+        </table>
+      </div></div>
+    </div>
+    <div class="panel" data-week="1">
+      <div class="clause"><h3>Затем предложение и схема</h3><p>Презентация, одностраничник и видео-экскурсия. Выбираем форму сделки и готовим список вопросов юристу.</p></div>
+      <div class="frag-field"><div class="frag" data-ui>
+        <p class="frag-h">Схема сделки</p>
+        <ul class="opts">
+          <li>Вход долей<span>Инвестор становится совладельцем</span></li>
+          <li>Займ<span>Возврат и процент по договору</span></li>
+          <li class="sel">Участие в прибыли<span>Выбрано. Вопросы юристу готовы</span></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="panel" data-week="2">
+      <div class="clause"><h3>Потом свой круг, лично</h3><p>Составляешь список из 30+ человек: знакомые, клиенты, партнёры. Пишешь им с помощью ассистента, без публичных объявлений.</p></div>
+      <div class="frag-field"><div class="frag" data-ui>
+        <p class="frag-h">Мой круг, пример</p>
+        <table>
+          <tr><th scope="row">Игорь, партнёр по первой точке</th><td>встреча</td></tr>
+          <tr><th scope="row">Олег, постоянный клиент</th><td>ответил</td></tr>
+          <tr><th scope="row">Светлана, поставщик</th><td>ответила</td></tr>
+          <tr><th scope="row">Дмитрий, бывший коллега</th><td>написал</td></tr>
+          <tr class="sum"><th scope="row">В списке 32, написал 12</th><td>встреч 1</td></tr>
+        </table>
+      </div></div>
+    </div>
+    <div class="panel" data-week="3">
+      <div class="clause"><h3>И пять переговоров с разбором</h3><p>Звонок по скрипту, встреча по регламенту. Я разбираю записи и правлю следующий разговор.</p></div>
+      <div class="frag-field"><div class="frag" data-ui>
+        <p class="frag-h">Разбор записи, пример</p>
+        <ul class="opts review">
+          <li><b>12:40</b> Спросил про риски, ты ушёл в общие слова.<span>Покажи сценарий с прибылью минус 30%.</span></li>
+          <li><b>24:10</b> «Надо подумать».<span>Назначь дату и что пришлёшь до неё.</span></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="scrub">
+      <input id="week" type="range" min="0" max="3" step="1" value="0" aria-label="Неделя программы">
+      <ol class="scrub-names"><li class="on">Неделя 1</li><li>Неделя 2</li><li>Неделя 3</li><li>Неделя 4</li></ol>
+    </div>
+  </div>
+</section>
+
+<section class="law" id="law">
+  <div class="wrap law-grid">
+    <h2 class="reveal">Старая схема теперь под штрафом</h2>
+    <div class="reveal">
+      <p>С 2025 года действует 461-ФЗ. За привлечение денег граждан без лицензии ЦБ предусмотрены штрафы, при публичном предложении до 1 млн ₽ для юрлица. Объявление «ищу инвестора, X% годовых» и договор инвестирования теперь опасны для самого собственника.</p>
+      <p>Поэтому здесь не учат собирать деньги «у всех». Ты предлагаешь участие лично своему кругу, а форму сделки проверяешь у юриста. Список вопросов к нему даём, юридическим заключением он не является.</p>
+    </div>
+  </div>
+</section>
+
+<section class="compare wrap" id="compare">
+  <h2 class="reveal">Банк, брокер или сам</h2>
+  <div class="tbl-scroll reveal">
+  <table class="plans">
+    <thead><tr><td></td><th scope="col">Банк</th><th scope="col">Брокер</th><th scope="col" class="own">Своя инвестиция</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Что просит</th><td>Залог, часто квартиру</td><td>Предоплату и 7–10% от суммы</td><td class="own">4–5 часов в неделю и оплату программы</td></tr>
+      <tr><th scope="row">Цена при 3 млн ₽</th><td>Часто 25–30% годовых</td><td>210–300 тыс ₽ и предоплата</td><td class="own">Стоимость пилота назову на созвоне</td></tr>
+      <tr><th scope="row">Кто говорит с инвестором</th><td>Инвестора нет</td><td>Брокер</td><td class="own">Ты, с разбором каждого разговора</td></tr>
+      <tr><th scope="row">Что остаётся</th><td>Кредит</td><td>Сделка, если состоится</td><td class="own">Пакет, контакт с инвестором, навык</td></tr>
+      <tr><th scope="row">Что обещают</th><td>Решение по заявке</td><td>Поиск</td><td class="own">Работу, но не сумму денег</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="package wrap" id="package">
+  <figure class="reveal">
+    <img src="assets/gen-desk.jpg" width="1600" height="1073" alt="Рабочий стол в подсобке вечером: ноутбук, лампа и распечатанный расчёт" loading="lazy">
+  </figure>
+  <div>
+    <h2 class="reveal">Что будет через 30 дней</h2>
+    <ul class="big-list reveal">
+      <li>Расчёт, презентация, одностраничник и видео</li>
+      <li>Выбранная схема сделки и вопросы юристу</li>
+      <li>Список из 30+ человек своего круга</li>
+      <li>Пять проведённых переговоров с разбором</li>
+    </ul>
+    <p class="reveal">В программе 4 недели и 4 живые встречи-разбора, ИИ-ассистенты для финмодели, презентации и переписки, скрипт звонка и регламент встречи. Бонусы: карта возражений, шаблон ежемесячного отчёта инвестору и диагностика продажи бизнеса.</p>
+    <p class="reveal"><b>Сколько денег ты привлечёшь, я не обещаю.</b> Это зависит от проекта и инвестора. Гарантирую работу: если задания недель 1–2 выполнены, а пакет не готов к показу, дорабатываем бесплатно, пока не будет готов. Если после первой недели поймёшь, что формат не твой, верну деньги.</p>
+  </div>
+</section>
+
+<section class="proof" id="proof">
+  <div class="wrap proof-grid">
+    <div>
+      <h2 class="reveal">Откуда метод</h2>
+      <p class="reveal">В 2020–2022 я с партнёрами вёл агентство привлечения инвестиций и обучение собственников: компьютерные клубы, пиццерии, барбершоп. Потом привлекал частные деньги в свои арендные виллы на Бали: участие в чистой прибыли и ежемесячная отчётность.</p>
+      <dl class="facts reveal">
+        <div><dt>Сумма сделок в агентстве</dt><dd>300 тыс – 1 млн ₽</dd></div>
+        <div><dt>Цикл сделки</dt><dd>4–16 дней</dd></div>
+      </dl>
+      <p class="reveal">Новый формат с ИИ и с учётом закона 2025 года ещё не проверен на группе, отзывов по нему нет. Поэтому сейчас идёт набор в пилот.</p>
+      <p class="reveal sign">Юрий Солар</p>
+    </div>
+    <figure class="fade reveal" id="fade">
+      <div class="fade-stack">
+        <img class="on" src="assets/syndics.jpg" width="1600" height="1081" alt="Картина Рембрандта: синдики гильдии суконщиков проверяют счётную книгу за столом" loading="lazy">
+        <img src="assets/voc.jpg" width="1600" height="1164" alt="Расписка Голландской Ост-Индской компании 1606 года и записи выплат" loading="lazy">
+        <img src="assets/bali.jpg" width="1600" height="1073" alt="Рисовые террасы на востоке Бали" loading="lazy">
+      </div>
+      <figcaption id="fade-cap">Рембрандт, 1662. Синдики проверяют счётную книгу. Вопрос «покажите цифры» старше банков.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="faq wrap" id="faq">
+  <div class="faq-list">
+    <h2 class="reveal">Частые вопросы</h2>
+    <ul id="faq-list">
+      <li class="on"><button type="button" aria-expanded="true">Это законно?</button><div class="ans">Здесь не учат публично собирать деньги «у всех». Ты предлагаешь участие лично знакомым и своему кругу, выбираешь форму сделки и проверяешь её у юриста. Список вопросов даём.</div></li>
+      <li><button type="button" aria-expanded="false">Я не умею продавать</button><div class="ans">И не нужно. Разговор с инвестором это ответы на его вопросы по расчёту. Скрипт и разборы закрывают остальное.</div></li>
+      <li><button type="button" aria-expanded="false">Нет времени</button><div class="ans">4–5 часов в неделю. Черновики делает ИИ, ты правишь.</div></li>
+      <li><button type="button" aria-expanded="false">Почему не брокер?</button><div class="ans">Брокер берёт 7–10% и уходит. Ты остаёшься без навыка и без контакта с инвестором. Здесь инвестор твой.</div></li>
+      <li><button type="button" aria-expanded="false">Боюсь потерять контроль над бизнесом</button><div class="ans">Контроль зависит от схемы. Вход долей, займ и участие в прибыли дают инвестору разные права. На второй неделе разбираем это на твоём случае, а итог проверяет юрист.</div></li>
+      <li><button type="button" aria-expanded="false">А если не найду денег?</button><div class="ans">Такое возможно, я этого не скрываю. У тебя останется пакет и навык, с ними можно идти на второй круг.</div></li>
+    </ul>
+  </div>
+  <div class="faq-pane" id="faq-pane" aria-live="polite"></div>
+</section>
+
+<section class="cta wrap" id="cta">
+  <h2>Начни с короткого разговора</h2>
+  <p>Напиши мне про проект, за 15 минут созвона поймём, реально ли найти инвестора в твоём кругу.</p>
+  <a class="btn" href="https://t.me/yuriy_solar?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82">Написать в Telegram</a>
+</section>
+
+</main>
+
+<footer class="tiles">
+  <div class="tile t-state">
+    <p class="t-big">Система самостоятельного привлечения частного инвестора.</p>
+    <p class="t-legal">Обучение и инструменты. Не инвестиционное предложение и не юридическая консультация.</p>
+  </div>
+  <nav class="tile t-nav" aria-label="Разделы в подвале">
+    <a href="#objections">Возражения</a>
+    <a href="#weeks">Как идёт</a>
+    <a href="#compare">Сравнение</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <div class="tile t-place"><p>Юрий Солар</p><p>Бали, Индонезия</p></div>
+  <div class="tile t-mail"><a href="https://t.me/yuriy_solar">t.me/yuriy_solar</a></div>
+  <div class="tile t-word"><p>Своя инвестиция</p></div>
+  <a class="tile t-go" href="https://t.me/yuriy_solar?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82">
+    <span>Проверить мой проект</span>
+    <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><path d="M8 40 40 8M14 8h26v26" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+  </a>
+  <p class="tile t-credits">Иллюстрации в разделах «Для двух ситуаций» и «Что будет через 30 дней» сделаны ИИ. Рембрандт, «Синдики гильдии суконщиков», 1662, общественное достояние, Wikimedia Commons. Расписка VOC, 1606, Westfries Archief, общественное достояние, Wikimedia Commons. Рисовые террасы, Восточный Бали, фото: Vyacheslav Argenberg, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Bali,_Rice_fields,_Rice_terraces_in_East_Bali,_Indonesia.jpg">Wikimedia Commons</a>.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
